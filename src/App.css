@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FCF6F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.TodoWrapper {
+  background: #990011;
+  margin-top: 6rem;
+  padding: 10rem;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  border-radius: 2rem;
+  border-style: outset;
+  width: 100%;
+}
+
+.TodoForm {
+  width: 100%;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 0.15rem solid #FCF6F5;
+  padding: 0.55rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #FCF6F5;
+  color: #990011;
+  border: white;
+  padding: 0.7rem;
+  cursor: pointer;
+  
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FCF6F5;
+  color: #990011;
+  padding: 1rem;
+  border-color: #FCF6F5;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 1rem;
+}
+
+.completed {
+  color: #b2011e;
+  text-decoration: line-through;
+}
+
+
+/*MEDIA QUERIES*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .TodoWrapper {width: 100%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .TodoWrapper {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .TodoWrapper {width: 100%;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .TodoWrapper {width: 100%;}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .TodoWrapper {width: 100%;}
+}
+ 
