@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #FCF6F5;
+  background: #fcf6f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,8 +25,10 @@ h1 {
 }
 
 .TodoWrapper {
+  display: flex;
   background: #990011;
   margin-top: 6rem;
+  margin-bottom: 3rem;
   padding: 10rem;
   padding-bottom: 2rem;
   padding-top: 3rem;
@@ -42,12 +44,13 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 0.15rem solid #FCF6F5;
-  padding: 0.55rem;
+  border: 0.15rem solid #fcf6f5;
+  padding: 0.38rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  width: 80%;
+  width: 100%;
   color: #fff;
+  font-size: 18px;
 }
 
 .todo-input::placeholder {
@@ -55,22 +58,23 @@ h1 {
 }
 
 .todo-btn {
-  background: #FCF6F5;
+  background: #fcf6f5;
   color: #990011;
   border: white;
   padding: 0.7rem;
+  margin-bottom: 1rem;
   cursor: pointer;
-  
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
 }
 
 .Todo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #FCF6F5;
+  background: #fcf6f5;
   color: #990011;
   padding: 1rem;
-  border-color: #FCF6F5;
+  border-color: #fcf6f5;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
   cursor: pointer;
@@ -85,31 +89,29 @@ h1 {
   text-decoration: line-through;
 }
 
-
 /*MEDIA QUERIES*/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .TodoWrapper {width: 100%;}
+@media only screen and (max-width: 800px) {
+  .TodoWrapper {
+    display: flex;
+    flex-direction: column; /* Adjust flex direction for mobile layout */
+    font-size: 20px;
+    width: 90%; /* 100% width to take full viewport width */
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    margin-left: 1.3rem;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .TodoWrapper {width: 100%;}
+@media only screen and (min-width: 801px) and (max-width: 1800px) {
+  .TodoWrapper {
+    display: grid;
+    grid-template-columns: auto;
+    font-size: 20px;
+    width: 100%; /* Use 100% width for this range too */
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+  }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .TodoWrapper {width: 100%;}
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .TodoWrapper {width: 100%;}
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .TodoWrapper {width: 100%;}
-}
- 
